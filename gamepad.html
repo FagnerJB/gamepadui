@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><?php wp_title('') ?></title><?php
+
+    wp_head()
+
+?></head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header>
+                    <h1 class="mt-3"><?php wp_title('') ?></h1>
+                    <p><?php the_excerpt() ?></p>
+                </header>
+                <div id="placeList"></div>
+                <div id="placeName"></div>
+                <div id="placeGamepads">
+                    <div class="text-muted text-center">
+                        <strong><i class="fas fa-gamepad"></i> No gamepad detected.</strong><br>
+                        <small>Plug or pair and press a button to detect.</small>
+                    </div>
+                </div>
+                <footer class="mt-2 small text-center text-muted">
+                    <a href="https://github.com/FagnerJB/gamepadui" target="_blank">Code</a>
+                    <a href="https://fagnerjb.com/license#2019" target="_blank">by</a>
+                    <a href="https://fagnerjb.com">Fagner JB.</a>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <template id="gamepad">
+        <div class="gamepad xbox">
+            <div class="btn btn-outline-secondary trigger left">
+                <span class="xbox">LT</span>
+                <span class="ps">L2</span>
+            </div>
+            <div class="btn btn-outline-secondary trigger right">
+                <span class="xbox">RT</span>
+                <span class="ps">R2</span>
+            </div>
+            <div class="btn btn-outline-secondary bumper left">
+                <span class="xbox">LB</span>
+                <span class="ps">L1</span>
+            </div>
+            <div class="btn btn-outline-secondary bumper right">
+                <span class="xbox">RB</span>
+                <span class="ps">R1</span>
+            </div>
+
+            <div class="btn btn-outline-secondary btn-sm select">
+                Select
+            </div>
+            <div class="btn btn-outline-secondary btn-sm start">
+                Start
+            </div>
+
+            <div class="btn btn-outline-secondary btn-up">
+                <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="btn btn-outline-secondary btn-left">
+                <i class="fas fa-angle-left"></i>
+            </div>
+            <div class="btn btn-outline-secondary btn-right">
+                <i class="fas fa-angle-right"></i>
+            </div>
+            <div class="btn btn-outline-secondary btn-down">
+                <i class="fas fa-angle-down"></i>
+            </div>
+
+            <div class="btn btn-outline-secondary btn-a">
+                <span class="xbox font-weight-bold">A</span>
+                <span class="ps"><i class="fas fa-times"></i></span>
+            </div>
+            <div class="btn btn-outline-secondary btn-x">
+                <span class="xbox font-weight-bold">X</span>
+                <span class="ps"><i class="far fa-square"></i></span>
+            </div>
+            <div class="btn btn-outline-secondary btn-b">
+                <span class="xbox font-weight-bold">B</span>
+                <span class="ps"><i class="far fa-circle"></i></span>
+            </div>
+            <div class="btn btn-outline-secondary btn-y">
+                <span class="xbox font-weight-bold">Y</span>
+                <span class="ps"><i class="fas fa-caret-up"></i></span>
+            </div>
+
+            <div class="axis left">
+                <span class="pointer font-weight-bold">L</span>
+            </div>
+            <div class="axis right">
+                <span class="pointer font-weight-bold">R</span>
+            </div>
+        </div>
+    </template><?php
+
+    wp_footer();
+
+?></body>
+</html>

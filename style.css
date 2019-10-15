@@ -1,0 +1,177 @@
+body{font-family: 'Montserrat';}
+
+.current-1 .gmpd-2,
+.current-1 .gmpd-3,
+.current-1 .gmpd-4,
+.current-2 .gmpd-1,
+.current-2 .gmpd-3,
+.current-2 .gmpd-4,
+.current-3 .gmpd-1,
+.current-3 .gmpd-2,
+.current-3 .gmpd-4,
+.current-4 .gmpd-1,
+.current-4 .gmpd-2,
+.current-4 .gmpd-3{
+    display: none;
+}
+
+.gamepad{
+    position: relative;
+    max-width: 666px;
+    height: 200px;
+    margin: auto;
+}
+
+.gamepad.xbox .ps,
+.gamepad.ps .xbox{
+    display: none;
+}
+
+.gamepad .btn,
+.gamepad .axis,
+.gamepad .vibrate{
+    position: absolute;
+}
+
+.gamepad .btn:hover,
+.gamepad .btn:focus{
+    background-color: inherit!important;
+    color: inherit!important;
+}
+
+.trigger{
+    height: 70px;
+    background: linear-gradient(180deg, rgb(0,123,255) 0%, rgb(0,123,255) 100%);
+    background-repeat: no-repeat;
+    background-position: 0 70px;
+}
+
+.trigger,
+.bumper{
+    top:0;
+}
+
+.trigger.left{
+    left: 5%
+}
+
+.bumper.left{
+    left: 15%
+}
+
+.trigger.right{
+    right: 5%
+}
+
+.bumper.right{
+    right: 15%
+}
+
+.start{
+    top: 0px;
+    left: 45%
+}
+
+.select{
+    top: 35px;
+    left: 44.2%;
+}
+
+.btn-up,
+.btn-y{
+    top: 29px;
+}
+
+.btn-down,
+.btn-a{
+    top: 108px;
+}
+
+.btn-up,
+.btn-down{
+    left: 29.5%
+}
+
+.btn-y,
+.btn-a{
+    right: 29.5%
+}
+
+.btn-left,
+.btn-right,
+.btn-b,
+.btn-x{
+    top: 69px
+}
+
+.btn-left{
+    left: 22.5%;
+}
+
+.btn-b{
+    right: 22.5%;
+    color: #a64442;
+}
+
+.btn-right{
+    left: 36.5%
+}
+
+.btn-a{
+    color:#6c9734
+}
+
+.btn-x{
+    right: 36.5%;
+    color:#047ea3
+}
+
+.btn-y{
+    color: #d6ae1c;
+}
+
+.axis{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #6c757d;
+    border-radius: 50%;
+    top: 105px;
+}
+
+.axis.left{
+    left: 1%;
+}
+
+.axis.right{
+    right: 1%
+}
+
+.pointer{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%; 
+    background-color: #6c757d;
+    display: block;
+    top: 50%;
+    left: 50%;
+    margin-top: -14px;
+    margin-left: -14px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+}
+
+.vibrate{
+    top: 150px;
+    left: 42%;
+   
+}
+
+.pressed{
+    background-color:rgb(0, 123, 255);
+    color:#fff;
+}
